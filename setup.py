@@ -6,8 +6,6 @@ setup(
     packages=find_packages() ,
     include_package_data=True,
     install_requires = [
-        "geoambiental @ git+https://github.com/IslasGECI/geoambiental.git@v0.1.0",
-        "utm",
-        "numpy"
+        "geoambiental @ git+https://github.com/IslasGECI/geoambiental.git@v0.1.0"
     ]
 )
