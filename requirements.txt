@@ -1,0 +1,9 @@
+# Dependencias de instalación
+git+https://github.com/IslasGECI/geoambiental.git@v0.1.0
+# Dependencias de desarrollo
+autopep8
+codecov
+pylint
+pytest
+pytest-cov
+rope
