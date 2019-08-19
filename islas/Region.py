@@ -18,12 +18,10 @@ class Region(Polygon):
     Atributos
     ----------
     `id : string`
-        Arreglo con las coordenadas este de todos los polígonos separados por
-        un nan.
+        Regresa una cadena con el id del RegionID que se usó para crearla
 
     `name : string`
-        Arreglo con las coordenadas norte de todos los polígonos separados por
-        un nan.
+        Regresa una cadena con el nombre del RegionID que se usó para crearla
 
     [Atributos heredados de geoambiental.Polygon]
 
@@ -38,7 +36,7 @@ class Region(Polygon):
     
     Ejemplos
     --------
-    Crear la región adeliaida    
+    Crear la región adeliaida
     >>> region = islas.Region(islas.RegionID.adelaida)
     >>> region.id == islas.RegionID.adelaida.name
     True
