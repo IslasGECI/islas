@@ -8,6 +8,6 @@ install:
   - pip install -r requirements.txt
 # Comando para correr las pruebas y medir cobertura 
 script:
-  - py.test --cov-report term --cov=islas -v
+  - pytest --cov-report term --cov=islas -v
 after_success:
   - codecov
