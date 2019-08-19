@@ -1,16 +1,11 @@
-import unittest
-
 from ..RegionID import RegionID
 
-class TestRegionID(unittest.TestCase):
-    
-    def test_is_equal_object_id(self):
-        id_adelaida = RegionID.adelaida
-        self.assertTrue(id_adelaida == RegionID.adelaida)
 
-    def test_is_not_equal_object_id(self):
-        id_adelaida = RegionID.adelaida
-        self.assertFalse(id_adelaida == RegionID.guadalupe)
+def test_is_equal_object_id():
+    id_adelaida = RegionID.adelaida
+    assert(id_adelaida == RegionID.adelaida)
 
-if __name__ == '__main__':
-    unittest.main()
+
+def test_is_not_equal_object_id():
+    id_adelaida = RegionID.adelaida
+    assert(id_adelaida != RegionID.guadalupe)
