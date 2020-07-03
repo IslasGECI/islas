@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+isla=${1}
+coordinate=${2}
+latitud_isla=$(cat islas/data/poligonos.json | jq '.[]
+  | select(.id == "'${isla}'")
+  | {"Geopoligono"}') \
+  | jq '.[].'${coordinate}'[]'
+echo ${latitud_isla}
