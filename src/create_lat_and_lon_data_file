@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#
+#2 ./src/create_lat_and_lon_data_file socorro
+isla=${1}
+for coordinate in lat lon; do
+  ./src/select_coordinates_by_island ${isla} \
+  | jq '.[].'${coordinate}'[]' > ${isla}_${coordinate}_coordinates.csv
+done
