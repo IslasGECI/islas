@@ -2,6 +2,6 @@
 Módulo que facilita la representación elementos insulares
 """
 
-from .RegionID import RegionID
-
-from .Region import Region
+__version__ = "0.1.0"
+from .RegionID import *  # noqa
+from .Region import *  # noqa
