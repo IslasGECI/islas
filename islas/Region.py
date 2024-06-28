@@ -25,15 +25,15 @@ class Region(Polygon):
 
     [Atributos heredados de geoambiental.Polygon]
 
-    
+
     Métodos
     -------
     [Métodos heredados de geoambiental.Polygon]
-    
+
     Notas
     -----
     Ninguna
-    
+
     Ejemplos
     --------
     Crear la región adeliaida
@@ -41,6 +41,7 @@ class Region(Polygon):
     >>> region.id == islas.RegionID.adelaida.name
     True
     """
+
     def __init__(self, region: RegionID):
         self._construct_from_poligonosjson(region)
 
