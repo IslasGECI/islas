@@ -1,6 +1,6 @@
 all: check
 
-.PHONY: all check format
+.PHONY: all check format tests
 
 module = islas
 codecov_token = dc23b981-6559-4c29-9a64-400a0f3ec026
