@@ -1,5 +1,5 @@
-from ..RegionID import RegionID
-from ..Region import Region
+from islas import RegionID
+from islas import Region
 
 
 def test_region_id_is_equal_object_name():
