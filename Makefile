@@ -1,6 +1,6 @@
 all: check
 
-.PHONY: all check
+.PHONY: all check format
 
 module = islas
 
@@ -20,4 +20,8 @@ check:
 	flake8 --max-line-length 100 tests
 	mypy ${module}
 	mypy tests
+
+format:
+	black --line-length 100 ${module}
+	black --line-length 100 tests
 
