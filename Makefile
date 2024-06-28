@@ -38,6 +38,9 @@ format:
 	black --line-length 100 ${module}
 	black --line-length 100 tests
 
+install:
+	pip install --editable .
+
 setup: clean install
 
 tests:
